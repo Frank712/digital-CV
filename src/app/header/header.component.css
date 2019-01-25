@@ -1,0 +1,152 @@
+/*  HEADER  */
+div.hero {
+  background-image: url(../../assets/img/Optimized-6835.jpg);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+}
+
+div.content-header {
+  padding-top: 20px;
+}
+
+nav.social-networks {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.social-networks {
+    padding-top: 10px;
+  }
+}
+
+nav.social-networks a {
+  color: #ffffff;
+  font-size: 2em;
+  margin-right: 20%;
+  transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.social-networks a {
+    margin-right: 25px;
+  }
+}
+
+
+nav.social-networks a i {
+  transition: all .5s ease-in;
+}
+
+nav.social-networks a:hover i {
+  color: #00c7ff;
+  -webkit-transform: scale(1.5);
+}
+
+nav.social-networks a:last-child {
+  margin-right: 0;
+}
+
+div.event-info {
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+div.event-info h1 {
+  transition: all .5s ease-in;
+}
+
+div.event-info:hover h1 {
+  color: #AB81E7;
+}
+
+@media only screen and (min-width: 768px) {
+  div.event-info {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+div.event-info p {
+  margin: 0;
+  display: inline;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+div.event-info p i {
+  color: #AB81E7;
+  font-size: 2.2rem;
+}
+
+p.date {
+  float: left;
+}
+
+p.city {
+  float: right;
+  text-align: right;
+}
+
+h1.site-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 7.7vw;
+}
+
+h1.site-name:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  h1.site-name {
+    font-size: 7vw;
+    margin: 0 auto;
+    line-height: 1;
+  }
+}
+
+p.slogan span {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #ffffff;
+  display: block;
+}
+
+p.slogan {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: none!important;
+  color: #00c7ff;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  p.slogan span {
+    display: inline;
+  }
+}
+
+
+
+/*    Bar     */
+div.bar {
+  background-color: #353535;
+  padding: 20px 0;
+}
+
+div.logo {
+  width: 80%;
+  float: left;
+}
+
+div.logo img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  div.logo {
+    width: 33%;
+  }
+}

@@ -1,0 +1,175 @@
+/*    Bar     */
+div.bar {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+
+div.logo {
+  width: 80%;
+  float: left;
+}
+
+div.logo img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  div.logo {
+    width: 33%;
+  }
+}
+
+/*  Main Nav  */
+nav.main-nav {
+  display: none;
+}
+
+nav.main-nav a {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease-in;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+nav.main-nav a:hover {
+  background-color: #315d9b;
+}
+
+nav.main-nav a:last-child {
+  border: 2px solid #315d9b;
+  color: #ffffff;
+}
+
+nav.main-nav a:last-child:hover {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.main-nav {
+    width: 67%;
+    float: right;
+    text-align: right;
+    display: block;
+  }
+  nav.main-nav a {
+    padding: 10px 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0 10px 0 0;
+  }
+}
+
+/*    Mobil Menu  */
+div.mobil-menu  {
+  width: 60px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  div.mobil-menu {
+    display: none;
+  }
+}
+
+div.mobil-menu span {
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: white;
+  display: block;
+}
+
+/*    Workshops   */
+section.program {
+  position: relative;
+}
+
+div.video-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+div.program-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+div.event-program {
+  margin-top: 80px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  div.event-program {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  div.event-program {
+    width: 50%;
+  }
+}
+
+nav.event-menu {
+  width: 100%;
+  border-bottom: 1px solid #315d9b;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.event-menu {
+    display: table;
+  }
+}
+
+nav.event-menu a {
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.event-menu a {
+    display: table-cell;
+  }
+}
+
+nav.event-menu a i, div.event-detail p i {
+  color: #315d9b;
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+
+div.event-detail {
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+}
+
+div.event-detail:nth-child(2) {
+  border-bottom: none;
+}
+
+div.event-detail p {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
