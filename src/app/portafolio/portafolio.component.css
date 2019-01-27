@@ -22,11 +22,6 @@ div.guest {
   overflow: hidden;
 }
 
-div.guest {
-  position: relative;
-  overflow: hidden;
-}
-
 div.guest img {
   max-width: 100%;
   filter: gray();
@@ -45,10 +40,10 @@ div.guest p {
   left: 0;
   padding: 15px 10px;
   margin: 0;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(0,0,0,0.75);
   width: 100%;
   text-align: left;
-  color: #00c7ff;
+  color: #A5D7EF;
   font-family: 'Oswald', sans-serif;
   font-size: 1.4em;
   -webkit-transition: all .5s ease-in-out;

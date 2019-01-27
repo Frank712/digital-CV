@@ -14,20 +14,48 @@ div.program-container {
 }
 
 div.event-program {
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-color: rgba(255,255,255,0.8);
   padding: 15px;
   position: relative;
 }
 
+div.logo-tech {
+  padding: 10px;
+  margin: auto 0;
+  text-align: center;
+  position: relative;
+}
+
+div.logo-tech img {
+  width: 75%;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
 @media only screen and (min-width: 768px) {
+  #skills-container {
+    display: flex;
+  }
+
   div.event-program {
-    width: 70%;
+    width: 60%;
+  }
+  div.logo-tech {
+    width: 40%;
   }
 }
 
 @media only screen and (min-width: 992px) {
+  #skills-container {
+    display: flex;
+  }
+
   div.event-program {
+    width: 50%;
+  }
+  div.logo-tech {
     width: 50%;
   }
 }
@@ -73,7 +101,7 @@ div.event-detail {
 }
 
 div.event-detail p {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-size: 18px;
 }
 
@@ -107,7 +135,15 @@ div.program{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  filter: brightness(0.75);
+  filter: brightness(0.85);
+}
+
+.hidden-course {
+  display: none;
+}
+
+.logo-hide {
+  display: none;
 }
 
 div.counter {

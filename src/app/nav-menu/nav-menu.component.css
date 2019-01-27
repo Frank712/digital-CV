@@ -5,12 +5,12 @@ div.bar {
 }
 
 div.logo {
-  width: 80%;
+  width: 100%;
   float: left;
 }
 
 div.logo img {
-  width: 100%;
+  width: 15%;
 }
 
 @media only screen and (min-width: 768px) {
