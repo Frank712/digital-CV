@@ -142,6 +142,13 @@ div.program{
   display: none;
 }
 
+.activelink {
+  color: #315d9b!important;
+  text-transform: uppercase;
+  font-size: 1.4em!important;
+  font-weight: bold;
+}
+
 .logo-hide {
   display: none;
 }

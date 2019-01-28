@@ -22,14 +22,14 @@ nav.social-networks {
 
 nav.social-networks a {
   color: #ffffff;
-  font-size: 2em;
+  font-size: 2.1em;
   margin-right: 20%;
   transition: all .3s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
   nav.social-networks a {
-    margin-right: 25px;
+    margin-right: 55px;
   }
 }
 
