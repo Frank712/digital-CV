@@ -148,6 +148,9 @@ div.program{
   font-size: 1.4em!important;
   font-weight: bold;
 }
+i.fa-crosshairs {
+  color: black!important;
+}
 
 .logo-hide {
   display: none;

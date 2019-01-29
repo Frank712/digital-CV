@@ -50,7 +50,7 @@ nav.social-networks a:last-child {
 div.event-info {
   text-align: center;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 div.event-info h1 {
@@ -61,23 +61,31 @@ div.event-info:hover h1 {
   color: #AB81E7;
 }
 
-@media only screen and (min-width: 768px) {
-  div.event-info {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
 div.event-info p {
   margin: 0;
   display: inline;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 768px) {
+  div.event-info {
+    width: 70%;
+    margin: 25px auto;
+  }
+  div.event-info p {
+    font-size: 20px;
+  }
+  div.event-info p i {
+    font-size: 2.2rem;
+  }
+}
+
+
+
 div.event-info p i {
   color: #AB81E7;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 p.date {
@@ -90,8 +98,13 @@ p.city {
 }
 
 h1.site-name {
+  margin-top: 37px;
   font-family: 'PT Sans', sans-serif;
-  font-size: 7.7vw;
+  font-size: 2.7rem;
+}
+
+h1.site-name span {
+  display: block;
 }
 
 h1.site-name:hover {
@@ -102,15 +115,18 @@ h1.site-name:hover {
 @media only screen and (min-width: 768px) {
   h1.site-name {
     font-size: 7vw;
-    margin: 0 auto;
+    margin-top: 25px;
     line-height: 1;
+  }
+  h1.site-name span {
+    display: inline-block;
   }
 }
 
 p.slogan span {
   font-weight: bold;
   font-size: 1.4em;
-  color: #ffffff;
+  color: #00c7ff;
   display: block;
 }
 
@@ -118,13 +134,14 @@ p.slogan {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: none!important;
-  color: #00c7ff;
-  margin-top: 40px;
+  color: #ffffff;
+  margin-top: 65px;
+  font-family: 'Open Sans', sans-serif
 }
 
 @media only screen and (min-width: 768px) {
   p.slogan span {
-    display: inline;
+    display: inline-block;
   }
 }
 

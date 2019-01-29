@@ -3,7 +3,12 @@ $(function () {
 
   $('nav.event-menu i.fa-crosshairs').hide();
   $('div.event-program .info-course:first').show();
-
+  var firstA = $('nav.event-menu a:first');
+  var firstI = $('nav.event-menu a:first i:first');
+  var secondI = $('nav.event-menu a:first i:nth-child(2)');
+  $(firstA).addClass('activelink');
+  $(firstI).show();
+  $(secondI).hide();
 
   $('.event-menu a').on('click', function() {
     $('nav.event-menu i.fa').show();

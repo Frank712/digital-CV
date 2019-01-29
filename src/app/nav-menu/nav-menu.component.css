@@ -5,17 +5,20 @@ div.bar {
 }
 
 div.logo {
-  width: 100%;
+  width: 40%;
   float: left;
 }
 
 div.logo img {
-  width: 15%;
+  width: 40%;
 }
 
 @media only screen and (min-width: 768px) {
   div.logo {
-    width: 33%;
+    width: 15%;
+  }
+  div.logo img {
+    width: 40%;
   }
 }
 
@@ -34,7 +37,7 @@ nav.main-nav a {
   width: 100%;
   display: block;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 nav.main-nav a:hover {
@@ -53,7 +56,7 @@ nav.main-nav a:last-child:hover {
 
 @media only screen and (min-width: 768px) {
   nav.main-nav {
-    width: 67%;
+    width: 85%;
     float: right;
     text-align: right;
     display: block;
