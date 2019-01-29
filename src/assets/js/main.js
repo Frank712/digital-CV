@@ -35,4 +35,14 @@ $(function () {
     $('.logo-hide').hide();
   });
 
+
+  $('div.guest a').on('click', function () {
+    $('div.project').addClass('hidden');
+    console.log(this);
+    var linkToPro = $(this);
+    var href_id = linkToPro.attr('href');
+    console.log(href_id);
+    $(href_id).removeClass('hidden');
+  })
+
 });

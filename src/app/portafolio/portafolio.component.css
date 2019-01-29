@@ -5,8 +5,22 @@ ul.guests-list li {
   float: left;
 }
 
+ul.tech-list li {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  display: table-cell;
+}
+
+p.link-to {
+  text-align: left;
+}
+
 @media only screen and (min-width: 480px) {
   ul.guests-list li {
+    width: 50%;
+  }
+  ul.tech-list li {
     width: 50%;
   }
 }
@@ -15,11 +29,30 @@ ul.guests-list li {
   ul.guests-list li {
     width: 33.3%;
   }
+  ul.tech-list li {
+    width: 33.3%;
+  }
 }
 
 div.guest {
   position: relative;
   overflow: hidden;
+  height: 196px;
+}
+
+div.tech {
+  position: relative;
+  height: 180px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.tech img {
+  max-height: 70%;
 }
 
 div.guest img {
@@ -31,7 +64,7 @@ div.guest img {
 
 div.guest:hover img {
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.1);
+  -webkit-transform: scale(1.2);
 }
 
 div.guest p {
@@ -51,4 +84,10 @@ div.guest p {
 div.guest:hover p {
   bottom: -20px;
   opacity: 0;
+}
+
+h2.topic{
+  text-align: right!important;
+  color: #213d75;
+  font-size: 2.1em;
 }

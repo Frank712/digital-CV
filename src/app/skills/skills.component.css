@@ -162,6 +162,6 @@ div.counter {
 }
 
 div.counter::before {
-  background-image: url(../../assets/img/7112.jpg);
+  background-image: url(../../assets/img/7112-min.jpg);
   content: '';
 }
