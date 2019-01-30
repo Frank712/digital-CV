@@ -8,12 +8,15 @@ ul.guests-list li {
 ul.tech-list li {
   padding: 10px;
   float: left;
-  width: 100%;
+  width: 50%;
   display: table-cell;
 }
 
 p.link-to {
   text-align: left;
+}
+p.link-to span {
+  text-decoration: #4B186F;
 }
 
 @media only screen and (min-width: 480px) {
@@ -23,6 +26,9 @@ p.link-to {
   ul.tech-list li {
     width: 50%;
   }
+  div.tech {
+    height: 150px!important;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -31,6 +37,9 @@ p.link-to {
   }
   ul.tech-list li {
     width: 33.3%;
+  }
+  div.tech {
+    height: 185px!important;
   }
 }
 
@@ -42,7 +51,7 @@ div.guest {
 
 div.tech {
   position: relative;
-  height: 180px;
+  height: 110px;
 }
 
 .center {
@@ -90,4 +99,9 @@ h2.topic{
   text-align: right!important;
   color: #213d75;
   font-size: 2.1em;
+}
+
+h3.subtopic {
+  color: #4B186F!important;
+  font-family: 'PT Sans', sans-serif;
 }

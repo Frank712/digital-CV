@@ -72,7 +72,7 @@ nav.main-nav a:last-child:hover {
 
 /*    Mobil Menu  */
 div.mobil-menu  {
-  width: 60px;
+  width: 62px;
   display: block;
   float: right;
   text-align: right;
@@ -87,7 +87,7 @@ div.mobil-menu  {
 }
 
 div.mobil-menu span {
-  height: 8px;
+  height: 5px;
   margin-bottom: 6px;
   background-color: white;
   display: block;

@@ -6,7 +6,7 @@
   <hr>
   <ul class="guests-list clearfix">
     <li>
-      <div class="guest" id="hospital">
+      <div (click)="showProject(0)" class="guest" id="hospital">
         <a href="#apiNode1">
           <img src="../../assets/img/hospital2.png" alt="hospital">
         </a>
@@ -14,7 +14,7 @@
       </div>
     </li>
     <li>
-      <div class="guest" id="facturation">
+      <div (click)="showProject(1)" class="guest" id="facturation">
         <a href="#apiSpring">
           <img src="../../assets/img/restspring2.png" alt="facturation">
         </a>
@@ -22,73 +22,59 @@
       </div>
     </li>
     <li>
-      <div class="guest" id="coffee">
-        <a href="#">
+      <div (click)="showProject(2)" class="guest" id="coffee">
+        <a href="#apiNode2">
           <img src="../../assets/img/crudNode.png" alt="coffee">
         </a>
         <p>REST Server NodeJS</p>
       </div>
     </li>
     <li>
-      <div class="guest" id="event">
-        <a href="#"></a>
-        <img src="../../assets/img/eventpage.png" alt="event">
-        <p>Event Page</p>
+      <div (click)="showProject(3)" class="guest" id="tickets">
+        <a href="#tickets">
+          <img src="../../assets/img/tickets.png" alt="tickets">
+        </a>
+        <p>Generador de Tickets</p>
       </div>
     </li>
     <li>
-      <div class="guest" id="gallery">
-        <a href="#"></a>
-        <img src="../../assets/img/gallery2.png" alt="gallery">
+      <div (click)="showProject(4)" class="guest" id="gallery">
+        <a href="#gallery">
+          <img src="../../assets/img/gallery2.png" alt="gallery">
+        </a>
         <p>Gallery Page</p>
       </div>
     </li>
     <li>
-      <div class="guest" id="predictor">
-        <a href="#"></a>
-        <img src="../../assets/img/predictor.png" alt="predictor">
+      <div (click)="showProject(5)" class="guest" id="predictor">
+        <a href="#predictor">
+          <img src="../../assets/img/predictor.png" alt="predictor">
+        </a>
         <p>IA: Predictor de acciones</p>
       </div>
     </li>
   </ul>
 </section>
 <div class="container section">
-  <div id="apiNode1" class="project hidden">
-    <h2 class="topic">{{projects[0].name}} </h2>
-    <p>{{projects[0].description}}</p>
-    <h3>Tecnologías y servicios empleados:</h3>
+  <div [id]="project.id" class="project" *ngIf="project">
+    <h2 class="topic">{{project.name}} </h2>
+    <h3 class="subtopic">Descripción:</h3>
+    <p>{{project.description}}</p>
+    <h3 class="subtopic">Tecnologías y servicios empleados:</h3>
+    <br>
     <ul class="tech-list center" style="display: table">
-      <li *ngFor="let tech of projects[0].technologies; let i=index">
+      <li *ngFor="let tech of project.technologies; let i=index">
         <div class="tech">
-          <img class="center" [src]="'../../assets/img/' + projects[0].img[i]" alt={{projects[0].img[i]}}>
+          <img class="center" [src]="'../../assets/img/' + project.img[i]" alt={{project.img[i]}}>
           <p>{{tech}}</p>
         </div>
       </li>
     </ul>
-    <h3>Enlaces:</h3>
-    <p class="link-to">Producción: <a target="_blank" [href]="projects[0].link"> {{projects[0].link}} </a></p>
-    <p class="link-to">GitHub (Backend): <a target="_blank" [href]="projects[0].gihutb_back">{{projects[0].gihutb_back}}</a></p>
-    <p class="link-to">GitHub (Frontend): <a target="_blank" [href]="projects[0].gihutb_front">{{projects[0].gihutb_front}}</a></p>
-    <p class="link-to">Documentación (Servicios): <a target="_blank" [href]="projects[0].doc_link">{{projects[0].doc_link}}</a></p>
+    <h3 class="subtopic">Enlaces:</h3>
+    <p *ngIf="project.link !== ''" class="link-to">Producción: <a target="_blank" [href]="project.link"> {{project.link}} </a></p>
+    <p *ngIf="project.note" class="link-to"> Nota:  <i>"{{ project.note }}"</i>  </p>
+    <p *ngIf="project.gihutb_back !== ''" class="link-to">GitHub (Backend): <a target="_blank" [href]="project.gihutb_back">{{project.gihutb_back}}</a></p>
+    <p *ngIf="project.gihutb_front !== ''" class="link-to">GitHub (Frontend): <a target="_blank" [href]="project.gihutb_front">{{project.gihutb_front}}</a></p>
+    <p *ngIf="project.doc_link !== ''" class="link-to">Documentación (Servicios): <a target="_blank" [href]="project.doc_link">{{project.doc_link}}</a></p>
   </div>
-
-  <div id="apiSpring" class="project hidden">
-    <h2 class="topic">{{projects[1].name}} </h2>
-    <p>{{projects[1].description}}</p>
-    <h3>Tecnologías y servicios empleados:</h3>
-    <ul class="tech-list center" style="display: table">
-      <li *ngFor="let tech of projects[1].technologies; let i=index">
-        <div class="tech">
-          <img class="center" [src]="'../../assets/img/' + projects[1].img[i]" alt={{projects[1].img[i]}}>
-          <p>{{tech}}</p>
-        </div>
-      </li>
-    </ul>
-    <h3>Enlaces:</h3>
-    <p class="link-to">Producción: <a target="_blank" [href]="projects[1].link"> {{projects[1].link}} </a></p>
-    <p class="link-to">GitHub (Backend): <a target="_blank" [href]="projects[1].gihutb_back">{{projects[1].gihutb_back}}</a></p>
-    <p class="link-to">GitHub (Frontend): <a target="_blank" [href]="projects[1].gihutb_front">{{projects[1].gihutb_front}}</a></p>
-    <p class="link-to">Documentación (Servicios): <a target="_blank" [href]="projects[1].doc_link">{{projects[1].doc_link}}</a></p>
-  </div>
-
 </div>
