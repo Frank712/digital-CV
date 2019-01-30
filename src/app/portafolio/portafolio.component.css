@@ -16,7 +16,7 @@ p.link-to {
   text-align: left;
 }
 p.link-to span {
-  text-decoration: #4B186F;
+  text-decoration: #722222;
 }
 
 @media only screen and (min-width: 480px) {
@@ -54,6 +54,10 @@ div.tech {
   height: 110px;
 }
 
+div.tech p {
+  text-align: center;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -82,11 +86,11 @@ div.guest p {
   left: 0;
   padding: 15px 10px;
   margin: 0;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.77);
   width: 100%;
   text-align: left;
-  color: #A5D7EF;
-  font-family: 'Oswald', sans-serif;
+  color: #F3BDBD;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.4em;
   -webkit-transition: all .5s ease-in-out;
 }
@@ -97,11 +101,31 @@ div.guest:hover p {
 
 h2.topic{
   text-align: right!important;
-  color: #213d75;
+  color: #750404;
   font-size: 2.1em;
 }
 
 h3.subtopic {
-  color: #4B186F!important;
-  font-family: 'PT Sans', sans-serif;
+  font-size: 1.3em;
+  font-family: 'Raleway', sans-serif;
 }
+
+.project {
+  padding: 2.5vw;
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 5%;
+}
+
+div#back-project {
+  background-image: url(../../assets/img/code-back8.jpg);
+  filter: grayscale(1.2);
+  -webkit-filter: grayscale(1.2);
+  -webkit-transition: all .4s ease-in;
+  background-position: top center;
+  background-size: cover;
+}
+
+div#back-project:hover {
+  filter: none;
+}
+

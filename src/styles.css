@@ -380,7 +380,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 2px solid #315d9b;
+  border-top: 2px solid #643838;
   margin: 0.4em 0;
   padding: 0;
   align-content: center;
@@ -449,7 +449,7 @@ body {
 
 /*  GLOBALS   */
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.9em;
   text-align: center;
   color: #1a1a1a;
@@ -467,11 +467,11 @@ h2 {
 
 div.indicator {
   position: absolute;
-  margin: 36px 25% 35px 7%;
+  margin: 0 21% 0 7%;
 }
 
 div.indicator img {
-  width: 10%;
+  width: 7%;
   filter: grayscale(0.7);
 }
 
@@ -486,8 +486,8 @@ div.indicator img {
 
 h3 {
   font-size: 1.2em;
-  color: #315d9b;
-  font-family: 'PT Sans', sans-serif;
+  color: #722222;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
 }
 
@@ -497,22 +497,22 @@ ul {
   padding: 0;
 }
 .button {
-  background-color: #315d9b;
+  background-color: #722222;
   padding: 10px 40px;
   color: white;
-  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.2em;
   margin-top: 20px;
   display: inline-block;
   transition: all .3s ease-in;
-  border: 2px solid #213d75;
+  border: 2px solid #ffffff;
 }
 
 .button:hover {
-  background-color: #213d75;
+  background-color: #750404;
+  color: #ffffff;
 }
 
 .button.hollow,
@@ -541,7 +541,7 @@ ul {
 
 .section p {
   font-size: 1em;
-  text-align: center;
+  text-align: justify;
 }
 
 @media only screen and (min-width:768px) {

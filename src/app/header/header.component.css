@@ -1,9 +1,11 @@
 /*  HEADER  */
 div.hero {
-  background-image: url(../../assets/img/Optimized-6835.jpg);
+  background-image: url(../../assets/img/code-back3.jpg);
   height: 100vh;
   background-position: top center;
   background-size: cover;
+  filter: brightness(1.1);
+
 }
 
 div.content-header {
@@ -21,7 +23,7 @@ nav.social-networks {
 }
 
 nav.social-networks a {
-  color: #ffffff;
+  color: #722222;
   font-size: 2.1em;
   margin-right: 20%;
   transition: all .3s ease-in-out;
@@ -30,6 +32,7 @@ nav.social-networks a {
 @media only screen and (min-width: 768px) {
   nav.social-networks a {
     margin-right: 55px;
+    font-size: 2.5em;
   }
 }
 
@@ -39,7 +42,7 @@ nav.social-networks a i {
 }
 
 nav.social-networks a:hover i {
-  color: #00c7ff;
+  color: #750404;
   -webkit-transform: scale(1.5);
 }
 
@@ -48,8 +51,11 @@ nav.social-networks a:last-child {
 }
 
 div.event-info {
+  padding: 1.5vw;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.30);
   text-align: center;
-  color: #fff;
+  color: #722222;
   margin-top: 25px;
 }
 
@@ -58,7 +64,7 @@ div.event-info h1 {
 }
 
 div.event-info:hover h1 {
-  color: #AB81E7;
+  color: #750404;
 }
 
 div.event-info p {
@@ -84,7 +90,7 @@ div.event-info p {
 
 
 div.event-info p i {
-  color: #AB81E7;
+  color: #251919;;
   font-size: 1.5rem;
 }
 
@@ -98,9 +104,10 @@ p.city {
 }
 
 h1.site-name {
-  margin-top: 37px;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 2.7rem;
+  background: transparent;
+  margin-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9em;
 }
 
 h1.site-name span {
@@ -114,7 +121,7 @@ h1.site-name:hover {
 
 @media only screen and (min-width: 768px) {
   h1.site-name {
-    font-size: 7vw;
+    font-size: 6.66vw;
     margin-top: 25px;
     line-height: 1;
   }
@@ -125,18 +132,19 @@ h1.site-name:hover {
 
 p.slogan span {
   font-weight: bold;
-  font-size: 1.4em;
-  color: #00c7ff;
+  font-size: 1.2em;
+  color: #722222;
   display: block;
 }
 
 p.slogan {
-  font-size: 1.2rem;
+  padding: 7px;
+  border-radius: 10%;
+  background-color: #8E8E8E;
   font-weight: bold;
   text-transform: none!important;
-  color: #ffffff;
-  margin-top: 65px;
-  font-family: 'Open Sans', sans-serif
+  color: #1a1a1a;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -149,7 +157,7 @@ p.slogan {
 
 /*    Bar     */
 div.bar {
-  background-color: #353535;
+  background-color: #722222;
   padding: 20px 0;
 }
 

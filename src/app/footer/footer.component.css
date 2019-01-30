@@ -1,0 +1,82 @@
+footer {
+  background-color: #1a1a1a;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer .container > div {
+  color: white;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .container > div {
+    width: 33.3%;
+    float: left;
+  }
+}
+
+footer h3 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+footer span {
+  color: #E09D9D;
+}
+
+footer .last-tweets li {
+  margin-bottom: 10px;
+}
+
+footer nav.social-networks {
+  text-align: left;
+}
+
+p.copyright {
+  background-color: #2e2e2e;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: .8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.social-networks {
+    padding-top: 10px;
+  }
+}
+
+nav.social-networks a {
+  color: #ffffff;
+  font-size: 2.1em;
+  margin-right: 20%;
+  transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.social-networks a {
+    margin-right: 25px;
+  }
+}
+
+footer a {
+  color: white;
+}
+
+nav.social-networks a i {
+  transition: all .5s ease-in;
+}
+
+nav.social-networks a:hover i {
+  color: #E09D9D;
+  -webkit-transform: scale(1.5);
+}
+
+nav.social-networks a:last-child {
+  margin-right: 0;
+}

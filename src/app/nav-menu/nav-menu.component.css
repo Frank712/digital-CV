@@ -1,6 +1,6 @@
 /*    Bar     */
 div.bar {
-  background-color: #1a1a1a;
+  background-color: #292929;
   padding: 20px 0;
 }
 
@@ -41,11 +41,11 @@ nav.main-nav a {
 }
 
 nav.main-nav a:hover {
-  background-color: #315d9b;
+  background-color: #722222;
 }
 
 nav.main-nav a:last-child {
-  border: 2px solid #315d9b;
+  border: 2px solid #D56262;
   color: #ffffff;
 }
 
