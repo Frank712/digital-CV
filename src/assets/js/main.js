@@ -1,6 +1,16 @@
 $(function () {
   'use strict';
 
+  var map = L.map('mapid').setView([19.423775, -98.973929], 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  L.marker([19.423775, -98.973929]).addTo(map)
+    .bindPopup('Hello!<br> I\'m here .')
+    .openPopup();
+
   $('nav.event-menu i.fa-crosshairs').hide();
   $('div.event-program .info-course:first').show();
   var firstA = $('nav.event-menu a:first');
